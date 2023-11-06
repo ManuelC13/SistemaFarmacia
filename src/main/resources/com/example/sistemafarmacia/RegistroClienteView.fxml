@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sistemafarmacia.RegistroClienteController">
+   <children>
+      <SplitPane dividerPositions="0.7345844504021447" layoutX="110.0" layoutY="155.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <GridPane layoutX="14.0" layoutY="25.0" prefHeight="315.0" prefWidth="450.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="234.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="215.66668701171875" minWidth="10.0" prefWidth="171.66665649414062" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="303.0" minWidth="10.0" prefWidth="270.3333435058594" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Nombre:">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Edad:" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Número de contacto:" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Número de cliente amigo:" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="txtNombre" prefHeight="4.0" prefWidth="274.0" promptText="Juan" GridPane.columnIndex="1" />
+                        <TextField fx:id="txtEdad" prefHeight="2.0" prefWidth="274.0" promptText="18" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtNumeroContacto" prefHeight="11.0" prefWidth="274.0" promptText="9864567567" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="txtNumeroClienteAmigo" prefHeight="0.0" prefWidth="274.0" promptText="Escriba la clave de 5 digitos" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label text="Apellido:" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="txtApellido" prefHeight="2.0" prefWidth="274.0" promptText="Perez" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Domicilio" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="txtCalle" prefHeight="2.0" prefWidth="274.0" promptText="San Juan" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <TextField fx:id="txtCP" prefHeight="9.0" prefWidth="274.0" promptText="Escriba la clave de 5 digitos" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <TextField fx:id="txtColonia" prefHeight="0.0" prefWidth="274.0" promptText="Felipe Carrillo Puerto" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <TextField fx:id="txtCruzamientos" prefHeight="5.0" prefWidth="274.0" promptText="Entre calle 12 y 45" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <Label text="Calle:" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Codigo Postal:" GridPane.rowIndex="7">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Colonia:" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Cruzamientos:" GridPane.rowIndex="9">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <VBox layoutX="504.0" layoutY="95.0" prefHeight="175.0" prefWidth="155.0" spacing="15.0" AnchorPane.rightAnchor="39.0">
+                     <children>
+                        <Button fx:id="btnGuardar" mnemonicParsing="false" onAction="#guardar" prefHeight="30.0" prefWidth="100.0" text="Guardar">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnActualizar" disable="true" mnemonicParsing="false" onAction="#actualizar" prefHeight="30.0" prefWidth="100.0" text="Actualizar">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnEliminar" disable="true" mnemonicParsing="false" onAction="#eliminar" prefHeight="30.0" prefWidth="100.0" text="Eliminar">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#limpiar" prefHeight="30.0" prefWidth="100.0" text="Limpiar">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </VBox>
+                  <Label layoutX="620.0" layoutY="23.0" prefHeight="57.0" prefWidth="155.0" text="Registro de clientes" textAlignment="CENTER" wrapText="true" AnchorPane.rightAnchor="39.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ListView fx:id="lstClientes" layoutX="218.0" layoutY="47.0" prefHeight="400.0" prefWidth="698.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
